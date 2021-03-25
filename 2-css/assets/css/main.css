@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #3C3B3B;
+}
+
+body {
+    background: #F4F4F4;
+    min-width: 100vw;
+}
+
+/* header */
+#header{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 0px 0px 1px 0px;
+}
+
+.main_title{
+    text-transform: uppercase;
+    font: normal normal bold 14px/20px Source Sans Pro;
+    letter-spacing: 2.8px;
+    padding: 1.75rem 1.34rem 1.40rem  1.34rem;
+    border-right: 1px solid #EEEEEE;
+}
+
+.links_item{
+    padding-right: 1.68rem;
+    padding-left: 1.68rem;
+    border-right: 1px solid #EEEEEE;
+}
+/* Main  */
+.main{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+    
+}
+
+.menu {
+    align-self: end;
+    padding:1.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 0px 0px 1px 0px;
+}
+
+#main {
+    padding: 2.87rem 12.75rem 2.87rem 0;
+}
+
+/*  post  */
+.post {
+    /* width: 65.18rem; */
+    margin-bottom: 4.41rem;
+    background: #FFFFFF;
+    padding: 4.37rem 3.43rem 3.56rem 2.79rem;
+}
+
+.post > .header{
+    display: flex;
+    background: lightgreen;
+    justify-content: space-between;
+    padding: 4.37rem 0 4.37rem 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 3.75rem;
+}
+
+.meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author > img{
+    border-radius: 50%;
+    margin: 1rem 0 1rem 1rem;
+    border: 1px solid;
+    flex-direction: initial;
+}
+
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_featured > img {
+    width: 100%;
+}
+
+.post > .paragraph {
+    font: normal normal normal 16px/30px Source Sans Pro;
+    letter-spacing: 1.28px;
+    color: #3C3B3B;
+    margin-bottom:3.12rem ;
+}
+
+.title > .secondary_title {
+    font: normal normal 900 28px/46px Source Sans Pro;
+    letter-spacing: 9.24px;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.title > .paragraph{
+    font: normal normal normal 14px/20px Source Sans Pro;
+    letter-spacing: 3.92px;
+    color: #8E8E8E;
+    text-transform: uppercase;
+}
+
+.button_large{
+    border: 1px solid #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 254px;
+    height: 62px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    font: normal normal bold 14px/20px Source Sans Pro;
+    letter-spacing: 3.92px;
+    color: #3C3B3B;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button_large:hover{
+    border: 1px solid #3C3B3B;
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    transform: scale(1.1);
+}
+
+.stats{
+    display: none;
+}
+
+/* Botôes navegação entre paginas */
+.actions_pagination{
+    display: flex;
+}
+
+.actions_pagination > span > a{
+    margin-right:1.25rem; 
+}
+
+/* wrapper  */
+#wrapper{
+    display: flex; 
+    flex-direction: row-reverse;
+}
+#sidebar  {
+    display: flex;
+    flex-direction: column;
+    padding: 2.78rem 3.65rem 2.78rem 12.78rem ;
+    width:42.06rem;  
+}
+
+/* Posts  */
+.posts > div {
+    height: 100px;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px dashed #DBDBDB;
+}
+
+.posts > div >.header  {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding:0 1rem;
+}
+
+/* Mini-Posts  */
+.mini-post {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 25.59rem;
+    margin-bottom: 2.5rem; 
+}
+
+.mini-post > .header > div{
+    display: flex;
+    flex-direction: column;   
+}
+
+.tertiary_title > a{
+    font: normal normal 600 14px/16px Source Sans Pro;
+    letter-spacing: 3.92px;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.published {
+    font: normal normal normal 12px/20px Source Sans Pro;
+    letter-spacing: 1.44px;
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.mini-post > .header{
+    display: flex;
+    height: 4.12rem;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   background: white;
+   padding: 1.43rem ;
+}
+
+.mini-post > a > img{   
+   width: 100%;
+}
+
+.header > a > img {
+    border-radius: 50%;
+}
+
+.blurb {
+    margin-top: 2.81rem;
+}
+
+.secondary_title{
+    font: normal normal bold 16px/20px Source Sans Pro;
+    letter-spacing: 3.84px;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font: normal normal 600 16px/30px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #808080;
+    padding-top: 1.68rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 184px;
+    height: 62px;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    border: 1px solid #E1E1E1;
+    font: normal normal bold 14px/20px Source Sans Pro;
+    letter-spacing: 3.92px;
+    color: #3C3B3B;
+    text-transform: uppercase;
+}
+
+/* Resposnivo para tablet  */
+@media (min-width: 481px)  and (max-width: 1024px) {
+    html{
+        font-size:87.5%;
+    }
+    .links{
+        display: none;
+    }
+    #wrapper{
+        flex-direction: column;
+    }
+    #main {
+        padding: 0 0 2.87rem 0;
+    }
+    .post > .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .post > .header > .title {
+        text-align: center;
+    }
+    .meta{
+        padding-top: 2.43rem;
+        align-self: flex-end;
+    }
+    .actions_pagination{
+        display: flex;
+        justify-content: center;
+    }
+    .mini-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.25rem;
+        justify-content: space-evenly;
+    }
+    .mini-post {
+        width:23.43rem ;
+    }
+    #sidebar {
+        padding: 0;
+        width:100%;
+    }
+    .posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.25rem
+    }
+    .blurb{
+        padding: 2.12rem 2.5rem;
+    }
+}
+
+/* Responsivo para celular  */
+@media (max-width: 481px) {
+    #wrapper{
+        flex-direction: column;
+       
+    }
+    .links{
+        display: none;
+    }
+    .main_title {
+        border-right: none;
+    }
+    #main {
+        padding: 2.87rem 0 0 0;
+        max-width: 100vw;
+    }
+    .post{
+        text-align: center;
+        padding: 0 0 4.87rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:1.91rem ;
+    }
+    .post > .header {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+    }
+    .secondary_title {
+        font: normal normal 900 20px/28px Source Sans Pro;
+        letter-spacing: 6.6px;
+    }
+    .published{
+        font: normal normal 900 14px/20px Source Sans Pro;
+        letter-spacing: 1.68px; 
+        padding-top: 2.43rem;
+    }
+    .title > .paragraph{
+        font: normal normal normal 14px/20px Source Sans Pro;
+        letter-spacing: 3.92px;
+    }
+    .post > .paragraph {
+        font: normal normal normal 16px/30px Source Sans Pro;
+        letter-spacing: 1.28px;
+    }
+    .actions_pagination {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sidebar{
+        display: flex;
+        flex-direction: column;
+        padding: 2.78rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .mini-post > .header {
+        height: 100px;
+        margin-left:1.43rem ;
+        max-width: 100vw; 
+    }
+    .mini-post > .header > div >.published{
+        padding-top: 0.62rem;
+        font: normal normal normal 12px/20px Source Sans Pro;
+        letter-spacing: 1.44px;
+    }
+    .posts > div > .header > .published {
+        padding-top: 0.65rem;
+        font: normal normal normal 12px/20px Source Sans Pro;
+        letter-spacing: 1.44px;
+    }
+    .posts > div > .header > .tertiary_title {
+        font: normal normal bold 14px/20px Source Sans Pro;
+        letter-spacing: 3.36px;  
+    }
+    .posts div {
+        padding-top:1.43rem;
+    }
+    .posts > div > .header {
+        padding-left: 1.43rem;
+    }
+    .blurb{
+        padding: 2.62rem 6.75rem 2.5rem 1.75rem;
+    }
+}
